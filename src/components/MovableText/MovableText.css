@@ -1,0 +1,28 @@
+.movable-text {
+    font-size: 42px;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.movable-text > div {
+    transition: margin-left 1.4s ease, width 1.4s ease;
+    overflow: hidden;
+    height: 4rem;
+}
+
+.movable-text > div > div {
+    /* backface-visibility: hidden; */
+    background-color: black;
+    transition: transform 1.4s ease;
+    overflow: hidden;
+}
+
+/* .movable-text > div > div:first-child {
+    z-index: 10;;
+} */
+
+.movable-text .target-text {
+    top: 0;
+    left: 0;
+}

@@ -1,14 +1,24 @@
+/* @font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
 .App {
   text-align: center;
+  color: whitesmoke;
+  /* font-family: 'OpenSans'; */
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,17 +27,78 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.absolute {
+  position: absolute;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.full-view-width {
+  width: 100vw;
+}
+
+.full-view-height {
+  height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.center-items-horizontally {
+  justify-content: center;
+}
+
+.center-items-vertically {
+  align-items: center;
+}
+
+.center-items {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 0 1 auto;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.relative {
+  position: relative;
 }

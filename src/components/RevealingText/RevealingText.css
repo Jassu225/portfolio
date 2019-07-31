@@ -1,0 +1,25 @@
+.revealing-text-container {
+    font-size: 42px;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+}
+
+.visible-text {
+    transition: color 1s ease;
+}
+
+.visible-text, .revealing-text {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.revealing-text {
+    text-align: end;
+    transition: width 1s ease;
+    /* font-weight: 100; */
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: flex-end;
+}

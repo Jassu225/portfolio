@@ -1,0 +1,167 @@
+.logo-box {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-left: 60px;
+}
+
+.logo-container {
+    justify-content: center;
+    transform-style: preserve-3d;
+    position: relative;
+    border-radius: 50%;
+}
+
+.main-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    /* transition: transform 1.3s ease;
+    will-change: transform;
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+}
+
+.logo {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    margin: auto;
+    will-change: top, transform, background-color, border-width;
+    transition: top 1s cubic-bezier(0, 0, 0.27, 1.5), transform 1.3s ease, background-color 1.3s ease, border-width 1.3s ease;
+    /* transform: rotate(-50deg); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 0px;
+    border-style: solid;
+}
+
+.logo, .poly-me {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.logo > div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+}
+
+/* .logo.html5, .logo.css4, .logo.css3, .logo.js, .logo.vuejs {
+    top: -35px;
+} */
+
+.logo.html5 {
+    /* background-color: #0b98cd; */
+    border-color: #e54c21;
+    background-color: #e54c21;
+}
+
+.logo.css3 {
+    /* background-color: #096632; */
+    /* background-color: #ff9144; */
+    border-color: #389bdd;
+    background-color: #389bdd;
+}
+
+.logo.js {
+    /* background-color: #1a3ef5; */
+    /* background-color: #203bdc; */
+    /* background-color: #021f9f; */
+    border-color: #eeff32;
+    background-color: #eeff32;
+}
+
+.logo.nodejs {
+    /* background-color: #894e9e; */
+    /* background-color: #3d3d3d; */
+    border-color: #3d3d3d;
+    background-color: #3d3d3d;
+}
+
+.logo.nodejs > div {
+    width: 70%;
+    height: 60%;
+}
+
+.logo.reactjs {
+    /* background-color: #962406; */
+    border-color: #61dafb;
+    background-color: #61dafb;
+}
+
+.logo.reactjs > div {
+    width: 80%;
+    height: 80%;
+}
+
+/* .logo.nodejs, .logo.reactjs {
+    top: -30px;
+} */
+
+.logo.vuejs {
+    /* background-color: #bf3333; */
+    /* background-color: #c88879; */
+    border-color: #3fb984;
+    background-color: #3fb984;
+}
+
+.logo.express {
+    /* top: -31px; */
+    border-color: #a3a3a3;
+    background-color: #a3a3a3;
+}
+
+.logo.express > div {
+    width: 62%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* .poly-container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border-radius: 8px 96px;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.poly-me {
+    position: relative;
+}
+
+.bg, .poly-me {
+    width: 100%;
+    height: 100%;
+} */

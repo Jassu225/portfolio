@@ -1,0 +1,15 @@
+.shining-text {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    color: #FFFFFF00;
+}
+
+.shining-text > div {
+    background: linear-gradient(to left, black, white, black);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transition: background-position 6s ease;
+}
