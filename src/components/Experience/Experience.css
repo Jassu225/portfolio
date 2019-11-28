@@ -1,0 +1,84 @@
+.experience {
+    background-color: #393e46;
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+}
+
+.experience > .animation-container {
+    background-color: #474747;
+    display: grid;
+    grid-template: 3fr 2fr / 1fr;
+}
+
+.experience > .animation-container .cog-container {
+    display: inline-block;
+    animation-name: rotate;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.experience > .animation-container .cog {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.experience > .exp-content-container {
+    background-color: #506578;
+    padding: 1rem;
+    display: grid;
+    grid-template: 4rem 1fr / 1fr;
+}
+
+.experience > .exp-content-container > .exp-header {
+    text-align: start;
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    /* padding-left: 1rem; */
+}
+
+.experience > .exp-content-container > .exp-content {
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.experience > .exp-content-container .expInfo {
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 2fr 2fr;
+    grid-template-areas: "timeline designation company" "timeline description description";
+    box-sizing: border-box;
+}
+
+.experience > .exp-content-container .expInfo > .timeline {
+    grid-area: timeline;
+    text-align: start;
+}
+
+.experience > .exp-content-container .expInfo > .designation {
+    grid-area: designation;
+    text-align: start;
+}
+
+.experience > .exp-content-container .expInfo > .company {
+    grid-area: company;
+    text-align: end;
+}
+
+.experience > .exp-content-container .expInfo > .description {
+    grid-area: description;
+    text-align: justify;
+}

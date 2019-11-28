@@ -1,3 +1,22 @@
 .main-container {
-    
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    /* -webkit-overflow-scrolling: overlay; */
+}
+
+.frame {
+    scroll-snap-align: start;
+}
+
+/* scroll bar style */
+.main-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 4px;
+    background-color: #808080;
 }

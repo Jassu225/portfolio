@@ -1,0 +1,95 @@
+.education {
+    background-color: #062962;
+}
+
+.education > .content {
+    width: 70%;
+    /* background-color: #040d43;
+    background-color: #02729e; */
+    background-color: #045183;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+}
+
+.education > .content > .header {
+    font-size: 3rem;
+    text-align: start;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    /* padding-top: 1rem; */
+}
+
+.education > .content > .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education > .content > .info > .year-container {
+    height: 86%;
+    position: relative;
+    top: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.education > .content > .info > .icon {
+    width: 3rem;
+    position: relative;
+    perspective: 500px;
+}
+
+.education > .content > .info > .icon > .svg {
+    height: 100%;
+    max-height: 90%;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.education > .content > .info > .icon > .edu-card {
+    position: absolute;
+    /* background-color: white; */
+    width: 30vw;
+    height: 6rem;
+    display: grid;
+    grid-template: 1fr 3fr / 1fr;
+    color: black;
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease-out;
+    /* transition: transform 0.6s cubic-bezier(0, 0, 0.27, 1.5), opacity 1s ease-out; */
+    padding: 0.5rem;
+    background-color: #d4ba89;
+    /* background-color: #24b2cb; */
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.education > .content > .info > .icon > .edu-card > div:first-child > div {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.education > .content > .info > .icon > .edu-card > .desc {
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.education > .image {
+    width: 30%;
+    background-color: #062962;
+    background-size: auto 80%;
+    background-blend-mode: hard-light;
+    /* background-blend-mode: screen; */
+    background-repeat: no-repeat;
+    background-position: center;
+}

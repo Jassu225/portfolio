@@ -1,0 +1,65 @@
+.education {
+    background-color: #062962;
+}
+
+.education > .content {
+    width: 70%;
+    /* background-color: #040d43;
+    background-color: #02729e; */
+    background-color: #045183;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+}
+
+.education > .content > .header {
+    font-size: 3rem;
+    text-align: start;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    /* padding-top: 1rem; */
+}
+
+.education > .content > .info {
+    display: grid;
+    grid-template: 1fr / 8rem 4rem 1fr;
+    align-items: center;
+}
+
+.education > .content > .info > .year-container {
+    height: 86%;
+    position: relative;
+    top: -1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.education > .content > .info > .icon {
+    /* box-sizing: border-box;
+    padding-left: 4rem; */
+    position: relative;
+}
+
+.education > .content > .info > .icon > .svg {
+    height: 100%;
+    max-height: 90%;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.education > .image {
+    width: 30%;
+    background-color: #062962;
+    background-size: auto 80%;
+    background-blend-mode: hard-light;
+    /* background-blend-mode: screen; */
+    background-repeat: no-repeat;
+    background-position: center;
+}

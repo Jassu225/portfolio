@@ -1,11 +1,11 @@
 import React from 'react';
 import './HomeFrame.css';
 
-import ShiningText from '../ShiningText';
-import RevealingText from '../RevealingText';
-import ScrambledText from '../ScrambledText';
-import MovableText from '../MovableText';
-import Logo from '../Logo';
+import ShiningText from './ShiningText';
+import RevealingText from './RevealingText';
+import ScrambledText from './ScrambledText';
+import MovableText from './MovableText';
+import Logo from './Logo';
 
 class HomeFrame extends React.Component {
   constructor(props) {
@@ -13,6 +13,12 @@ class HomeFrame extends React.Component {
     this.state = {
       step: 1
     };
+  }
+
+  componentDidMount() {
+    window.document.addEventListener("visibilitychange", event => {
+      // if(document.visibilityState)
+    });
   }
 
   transitionEnd = _ => {
@@ -31,7 +37,7 @@ class HomeFrame extends React.Component {
       style = {width: "calc(100% - 401px)"};
     }
     return (
-      <div className="home full-view-width full-view-height flex-container center-items-vertically"
+      <div className={"home flex-container center-items-vertically " + this.props.className}
       onTransitionEnd={this.transitionEnd}
       >
         {this.state.step === 1 && <ShiningText className="full-width full-height shining-text">Hello World!</ShiningText>}

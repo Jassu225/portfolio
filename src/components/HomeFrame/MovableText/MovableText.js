@@ -18,7 +18,6 @@ class MovableText extends Component {
   }
 
   componentDidMount() {
-    debugger
     window.setTimeout( _=> {
       this.setState({
         textStyle: {
@@ -28,7 +27,7 @@ class MovableText extends Component {
           transform: "rotateX(360deg)"
         }
       });
-    })
+    }, 10);
   }
 
   transitionEnd = event => {

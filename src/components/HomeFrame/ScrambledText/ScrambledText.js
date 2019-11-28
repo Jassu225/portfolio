@@ -48,7 +48,7 @@ class ScrambledText extends Component {
         newText = newText.split("");
       for(let i = 0; i < newText.length; i++){
         if(targetIndices.includes(i))
-          elements.push(<span style={{color: '#555555'}}>{this.state.randomCharset[Math.floor(Math.random() * this.state.randomCharset.length)]}</span>);
+          elements.push(<span style={{color: '#555555'}} key={i}>{this.state.randomCharset[Math.floor(Math.random() * this.state.randomCharset.length)]}</span>);
         else
           elements.push(newText[i]);
       }

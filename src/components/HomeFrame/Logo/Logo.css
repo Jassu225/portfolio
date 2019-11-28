@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
+    transition: opacity 1.2s ease;
     /* transition: transform 1.3s ease;
     will-change: transform;
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
@@ -52,6 +53,7 @@
     justify-content: center;
     border-width: 0px;
     border-style: solid;
+    opacity: 0;
 }
 
 .logo, .poly-me {
@@ -141,6 +143,11 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.logo.electron {
+    border-color: #272a37;
+    background-color: #272a37;
 }
 
 /* .poly-container {

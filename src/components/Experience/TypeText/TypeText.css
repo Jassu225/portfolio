@@ -1,0 +1,16 @@
+.experience .type-animation {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.experience .type-animation > pre {
+    height: 11.5rem;
+    box-sizing: border-box;
+    padding-left: 0.8rem;
+}
+
+.experience .type-animation div {
+    line-height: 2.3rem;
+}
